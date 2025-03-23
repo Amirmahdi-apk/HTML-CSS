@@ -1,0 +1,112 @@
+/* برای تگ بادی و که پس زمینه رو مشخص میکنه */
+body {
+    background-image: url(src/freshFruit.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 650px;
+}
+/* استایل دهی برای left-side */
+#left-side {
+    color: #fff;
+    border-radius: 15px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 30%;
+    height: 550px;
+    text-align: center;
+    padding: 2px;
+
+}
+/* یه استایل دهی گروهی برای اجزای داخل left-side */
+#left-side h1,
+#left-side span,
+#left-side a {
+    display: block;
+    position: relative;
+    top: 40px;
+    margin-bottom: 40px;
+    animation-name: leftside;
+    animation-duration: 1s;
+}
+
+/* برای aside سمت چپ هستش  */
+#left-side a {
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 15px;
+    width: fit-content;
+    position: relative;
+    left: 148px;
+}
+/* این برای نوبار بالاست و توی تمام صفحات هست */
+#right-nav {
+    display: block;
+    width: 50%;
+    float: right;
+}
+/* برای تگ های a نوبار بالاست و لازمه */
+#right-nav a {
+    margin-left: 60px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+/* وقتی که روی aهای بالا hover کردیم  */
+#right-nav a:hover {
+    animation-name: navmation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+/* مکان قرارگیری انیمیشن ها و  @keyframe ها */
+@keyframes navmation {
+    0% {
+        background-color: yellowgreen;
+        border-radius: 25px;
+
+    }
+
+    25% {
+        background-color: green;
+        border-radius: 15px;
+    }
+
+    50% {
+        background-color: lightblue;
+        border-radius: 25px;
+    }
+
+    75% {
+        background-color: yellow;
+        border-radius: 15px;
+    }
+
+    100% {
+        background-color: orange;
+        border-radius: 25px;
+    }
+}
+
+@keyframes leftside {
+    0% {
+        opacity: 0.2;
+    }
+
+    25% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    75% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
